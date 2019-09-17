@@ -19,40 +19,39 @@
         
     function printCard($img, $price, $pn, $description){   
         echo<<<_EOT
-        <div class="col-sm-3">
+            <div class="col-sm-4">
             <div class="card">
-                <img class="card-img-top" src="$img"> <p>$price</p>
+                <img class="card-img-top" style="max-height:300px; width: auto;" src="$img"> <p>$price</p>
                 <h5 class="card-body">
                     <h5 class="card-title">$pn</h5>
                     <p class="card-text">$description</p>
-                </div>
             </div>
-        </div>
+            </div>
 _EOT;
     } 
     $cols = 3;
     $col = 0;
     $result = queryTable("menu"); 
+    echo "<div class=\"container\">";
     while($item=$result->fetch_assoc()){
         $img = "../images/".$item['imgName'];
         $pn = $item['pizzaName'];
         $price= $item['price'];
         $toppings = $item['topping'];
         $description = "A pizza with ".$toppings;
-        if($col==0){
-            echo "<div class=\"row\">";
-            printCard($img, $price, $pn, $description);
-            $col++;
-        } else if($col >= $cols) {
+        if($col==0) echo "<div class=\"row \">";
+        
+        printCard($img, $price, $pn, $description); 
+        $col++;
+        if($col >= $cols) {
             echo "</div>";
             $col=0;
+            echo "<div class=\"space10\"></div>";
+            echo "<hr>";
         }
         
-        
-        if($col >= $cols){
-            
-    }
 }
+echo "</div>";
     ?>
 </body>
 </html>

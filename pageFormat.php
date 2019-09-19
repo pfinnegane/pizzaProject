@@ -26,7 +26,7 @@ echo<<<EOT
       <li class="nav-item active"><a class="nav-link" href="../">Home <span class="sr-only">(current)</span></a></li>
       <li class="nav-item"> <a class="nav-link" href="./pages/menu.php">Menu</a></li>
       <li class="nav-item"> <a class="nav-link" href="#">Orders</a></li>
-      <li class="nav-item"> <a class="nav-link" href="#">Login</a></li>
+      <li class="nav-item"> <a class="nav-link" href="\pizzaProject/pages/login.php">Login</a></li>
       <li class="nav-item"> <a class="nav-link" href="#">Signup</a></li>
       <li class="nav-item"> <a class="nav-link disabled" href="#">More</a></li>
     </ul>

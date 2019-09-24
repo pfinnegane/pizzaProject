@@ -48,7 +48,7 @@
               <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
               <a class="nav-item nav-link" href="./adminMenu.php">Menu</a>
               <a class="nav-item nav-link" href="#">Orders</a>
-               <a class="nav-item nav-link" href="./$link">$logInfo</a>
+               <a class="nav-item nav-link" href="./authentication.php">$logInfo</a>
                 <a class="nav-item nav-link" href="#">Signup</a>
               <a class="nav-item nav-link disabled" href="#">More</a>
             </nav>

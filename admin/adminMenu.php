@@ -25,10 +25,10 @@
     <div class="container">
      <?php
    require_once("adminPgFormat.php");
-   require_once '..//sqlSts.php';
+   require_once '..//scripts/functions.php';
   
     adminPgHeader("Update Menu ","admin.png","logout");
-   $conn=connectDB();
+   $conn=dbConnect();
 if (!$conn)
    exit("Unable to connect DB");
 $query="Select * from menu";

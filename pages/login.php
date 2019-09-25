@@ -1,7 +1,7 @@
-<link rel="stylesheet" href="\pizzaProject/css/main.css">
-<script src="\pizzaProject/scripts/main.js"></script>
+<link rel="stylesheet" href="../css/main.css">
+<script src="../scripts/main.js"></script>
 <?
-require_once '\pageFormat.php';
+require_once '../pageFormat.php';
 pageHeader();
 ?>
 <form name="login" enctype="multipart/form-data">

@@ -10,8 +10,8 @@ echo<<<EOT
 </button>
     <div class="collapse navbar-collapse id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item"><a class="nav-link" href="\pizzaProject">Home</a></li>
-      <li class="nav-item"> <a class="nav-link" href="\pizzaProject/pages/menu.php">Menu</a></li>
+      <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
+      <li class="nav-item"> <a class="nav-link" href="../pages/menu.php">Menu</a></li>
       <li class="nav-item"> <a class="nav-link" href="#">Orders</a></li>
       <li class="nav-item"> <a class="nav-link" href="\pizzaProject/admin/adminLoginForm.php">Login</a></li>
       <li class="nav-item"> <a class="nav-link" href="#">Signup</a></li>

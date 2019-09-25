@@ -8,6 +8,7 @@ if(!isset($_POST) && !isset($_POST['un']) && !isset($_POST['pw'])){
     $un = $_POST['un'];
     $pw = $_POST['pw'];
     $conn = dbConnect();
+
     $user_query = 
         "SELECT COUNT(1) FROM admin WHERE username=\"$un\" AND password=\"$pw\"";
     $userExists = $conn->query($user_query); 
